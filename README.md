@@ -4,8 +4,8 @@ A compilation of useful python commands for DM559
 Install and usage
 ------
 This repository requires the following dependencies:
-*numpy
-*matplotlib
+* numpy
+* matplotlib
 
 These can be installed by using the Python package installer (pip).
 ```
