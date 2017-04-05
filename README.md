@@ -8,12 +8,12 @@ This repository requires the following dependencies:
 *matplotlib
 
 These can be installed by using the Python package installer (pip).
-`
+```
 pip install numpy
 pip install matplotlib
-`
+```
 If this doesn't work, try running the same commands with superuser priviliges.
-`
+```
 sudo pip install numpy
 sudo pip install matplotlib
-`
+```
