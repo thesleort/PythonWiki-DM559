@@ -1,5 +1,7 @@
 import numpy as np
 import scipy as sp
+from random import randint
+
 '''
 def sumVec(a, b): return [a[i] + b[i] for i in range(len(b))]
 
@@ -139,19 +141,59 @@ def printlinearsystemtolatexwhileloop(a):
     print("\\end{cases}")
     print("\\end{bmatrix} ")
 
+
+def checkifvalidcrossproduct(a,b):
+    try:
+        numpycross(a, b)
+        print("its a valid crossproduct")
+        return True
+    except:
+        print("its invalid crossproduct ")
+        return False
+
+def checkifvalidproduct(a,b):
+    try:
+        numpycross(a, b)
+        print("its a valid product")
+        return True
+    except:
+        print("its invalid product ")
+        return False
+
+def checkifvaliddotproduct(a,b):
+    try:
+        numpydot(a, b)
+        print("its a valid dotproduct")
+        return True
+    except:
+        print("its invalid dotproduct ")
+        return False
+
+
+
 def test():
-    a = np.random.randint(1,10,(3,3));
-    b = np.random.randint(1,10,(3,3));
-    #print(a)
-    #print(b)
-    ret = numpycross(a, b)
+    # a = np.random.randint(1,100,(randint(0, 9),randint(0, 9)));
+    # b = np.random.randint(1,100,(randint(0, 9),randint(0, 9)));
+    a1 = [[1,1,0],[1,0,1]]
+    b1 = [[2,1,1],[3,1,2]]
+    a = a1
+    b = b1
+    print(a)
+    print(b)
+
+
+    # ret =
     #print (ret)
     system = [[-0, -8, 2, 0],
               [-1, 4, -2, 0],
               [-3, 7, 5, 0],]
-    print(system[0][1])
+    # print(system[0][1])
 
-    printlinearsystemtolatex(system)
-    printlinearsystemtolatexwhileloop(system)
-    print (np.absolute(-1))
+    # printlinearsystemtolatex(system)
+    # printlinearsystemtolatexwhileloop(system)
+    # print (np.absolute(-1))
+    checkifvalidcrossproduct(a,b)
+    checkifvalidproduct(a,b)
+    checkifvaliddotproduct(a, b)
+
 test()
