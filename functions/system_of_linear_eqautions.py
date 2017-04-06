@@ -17,7 +17,7 @@ b = [9, 8]
 
 #Solve(a, b) only works, when a is square.
 x = np.linalg.solve(a, b)
-print x
+print (x)
 
 '''
 Example 2
@@ -29,4 +29,4 @@ b = [5, 4, 0, 0]
 
 #Using lstsq(a, b) solves systems of linear eqautions, when a is not square.
 x = np.linalg.lstsq(a, b)
-print x
+print (x)
