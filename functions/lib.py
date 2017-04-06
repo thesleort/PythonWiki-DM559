@@ -92,5 +92,5 @@ def checkifvaliddotproduct(a, b):
         return [False]
 
 
-def checkifvalidmatrixmatrixproduct(a, b):
-    return checkifvaliddotproduct(a, b)
+# def checkifvalidmatrixmatrixproduct(a, b):
+#     return checkifvaliddotproduct(a, b)
